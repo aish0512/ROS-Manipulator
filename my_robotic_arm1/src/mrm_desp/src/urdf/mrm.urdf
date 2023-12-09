@@ -77,7 +77,7 @@
             <origin rpy="0 0 0" xyz="0 0 0.4"/>
         </collision>
     </link>
-    <joint name="joint_3" type="revolute">
+    <!--<joint name="joint_3" type="revolute">
     <axis xyz="0 1 0"/>
     <parent link="link_2"/>
     <child link="link_3"/>
@@ -160,7 +160,7 @@
             </geometry>
             <origin rpy="0 0 0" xyz="0 0 0.125"/>
         </collision>
-    </link>
+    </link>-->
 
     <!-- PositionJointInterface -->
     <!-- EffortJointInterface -->
@@ -184,36 +184,36 @@
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
-    <transmission name ="trans_3">
+    <!--<transmission name ="trans_3">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="joint_3">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         </joint>
         <actuator name="motor_3">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
     <transmission name ="trans_4">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="joint_4">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         </joint>
         <actuator name="motor_4">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
     <transmission name ="trans_5">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="joint_5">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         </joint>
         <actuator name="motor_5">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
-    </transmission>
+    </transmission>-->
 
     <gazebo>
         <plugin name="control" filename="libgazebo_ros_control.so"/>
@@ -224,7 +224,7 @@
     <gazebo reference="link_2">
         <selfCollide>true</selfCollide>
     </gazebo>
-    <gazebo reference="link_3">
+    <!--<gazebo reference="link_3">
         <selfCollide>true</selfCollide>
     </gazebo>
     <gazebo reference="link_4">
@@ -232,5 +232,5 @@
     </gazebo>
     <gazebo reference="link_5">
         <selfCollide>true</selfCollide>
-    </gazebo>
+    </gazebo>-->
 </robot>
