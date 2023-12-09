@@ -1,0 +1,2 @@
+bazu
+-DCATKIN_DEVEL_PREFIX=/home/aishwarya/Desktop/robotic_arms_ws/devel -DCMAKE_INSTALL_PREFIX=/home/aishwarya/Desktop/robotic_arms_ws/install -G Unix Makefiles

@@ -1,0 +1,7 @@
+1. before launch ros:
+source devel/setup.bash
+
+2. ros neotic env
+source /opt/ros/noetic/setup.bash
+
+3.
