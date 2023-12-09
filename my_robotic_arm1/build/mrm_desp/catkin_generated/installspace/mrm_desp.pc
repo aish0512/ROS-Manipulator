@@ -1,8 +1,0 @@
-prefix=/home/aishwarya/Desktop/my_robotic_arm/install
-
-Name: mrm_desp
-Description: Description of mrm_desp
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,2 +1,0 @@
-mrm_desp
--DCATKIN_DEVEL_PREFIX=/home/aishwarya/Desktop/my_robotic_arm/devel -DCMAKE_INSTALL_PREFIX=/home/aishwarya/Desktop/my_robotic_arm/install -G Unix Makefiles

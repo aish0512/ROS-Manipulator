@@ -19,7 +19,7 @@ def perform_trajectory():
     link_3 = rtb.DHLink(a=0.8, alpha=0, d=0)
     link_4 = rtb.DHLink(a=0, alpha=pi/2, d=0)
     link_5 = rtb.DHLink(a=0, alpha=pi/2, d=0)
-    robot= rtb.DHRobot([link_1,link_2,link_3,link_4,link_5])
+    robot= rtb.DHRobot([link_1,link_2,link_3,link_4,link_5]) 
     argv = sys.argv[1:]
 
     panda_joints = ['joint_1','joint_2','joint_3', 'joint_4', 'joint_5']
